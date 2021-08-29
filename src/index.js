@@ -1,5 +1,6 @@
 const { Intents, Client } = require("discord.js");
 const { appendPoints, getPoints } = require("./db");
+const { magicWords, bannedWords } = require("./words");
 
 const client = new Client({
   intents: [Intents.FLAGS.GUILDS, Intents.FLAGS.GUILD_MESSAGES],
